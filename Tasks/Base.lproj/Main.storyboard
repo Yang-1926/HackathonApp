@@ -53,40 +53,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442.0289855072465" y="103.79464285714285"/>
+            <point key="canvasLocation" x="74" y="104"/>
         </scene>
         <!--Entry View Controller-->
-        <scene sceneID="WE5-OO-MkV">
+        <scene sceneID="Z1F-2E-Gmt">
             <objects>
-                <viewController storyboardIdentifier="entry" id="ehu-Ld-sbP" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ev-3m-Kal">
+                <viewController storyboardIdentifier="entry" id="MAP-7R-Ot1" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6cG-by-PPu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efB-UB-P9l">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Task" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Uo-sz-aVD">
                                 <rect key="frame" x="20" y="64" width="374" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Rh0-dp-4gi"/>
+                                    <constraint firstAttribute="height" constant="52" id="92X-tJ-VHc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="T2t-I5-vwq"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="38A-wM-VUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="T2t-I5-vwq" firstAttribute="trailing" secondItem="efB-UB-P9l" secondAttribute="trailing" constant="20" id="4uW-q5-9g2"/>
-                            <constraint firstItem="efB-UB-P9l" firstAttribute="leading" secondItem="T2t-I5-vwq" secondAttribute="leading" constant="20" id="TBG-m7-bcX"/>
-                            <constraint firstItem="efB-UB-P9l" firstAttribute="top" secondItem="T2t-I5-vwq" secondAttribute="top" constant="20" id="jFm-wG-RY5"/>
+                            <constraint firstItem="8Uo-sz-aVD" firstAttribute="top" secondItem="38A-wM-VUm" secondAttribute="top" constant="20" id="PyF-nH-S6N"/>
+                            <constraint firstItem="38A-wM-VUm" firstAttribute="trailing" secondItem="8Uo-sz-aVD" secondAttribute="trailing" constant="20" id="c4T-0n-hv9"/>
+                            <constraint firstItem="8Uo-sz-aVD" firstAttribute="leading" secondItem="38A-wM-VUm" secondAttribute="leading" constant="20" id="wjx-YA-v9i"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="field" destination="efB-UB-P9l" id="dga-Lu-yfm"/>
+                        <outlet property="field" destination="8Uo-sz-aVD" id="G1m-vB-4W4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hkO-i7-Kzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cA4-fE-zqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241" y="104"/>
+            <point key="canvasLocation" x="766.66666666666674" y="103.79464285714285"/>
         </scene>
         <!--Task View Controller-->
         <scene sceneID="hWl-6t-FtY">
@@ -95,13 +95,32 @@
                     <view key="view" contentMode="scaleToFill" id="IcL-k2-Hgb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-pw-nXX">
+                                <rect key="frame" x="20" y="64" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UXg-zG-lip"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zR8-yu-2Fk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RkD-pw-nXX" firstAttribute="top" secondItem="zR8-yu-2Fk" secondAttribute="top" constant="20" id="INj-rb-22b"/>
+                            <constraint firstItem="zR8-yu-2Fk" firstAttribute="trailing" secondItem="RkD-pw-nXX" secondAttribute="trailing" constant="20" id="Vwh-lt-klT"/>
+                            <constraint firstItem="RkD-pw-nXX" firstAttribute="leading" secondItem="zR8-yu-2Fk" secondAttribute="leading" constant="20" id="chF-jI-jGX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="RkD-pw-nXX" id="Blf-Jf-Msa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hB3-JW-sx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="104"/>
+            <point key="canvasLocation" x="1450.7246376811595" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MmR-Zk-5gf">
@@ -119,7 +138,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGe-Xg-yG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="531.8840579710145" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-665" y="104"/>
         </scene>
     </scenes>
     <resources>

@@ -10,14 +10,18 @@ import UIKit
 class EntryViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var field: UITextField!
+
     
     var update: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        field.delegate = self
         
+        field.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
+        
+
+        
 
     }
     
@@ -34,6 +38,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
             return // just skips
         }
         
+
         guard let count = UserDefaults().value(forKey: "count") as? Int else {
             return
         }
