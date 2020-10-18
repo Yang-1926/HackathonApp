@@ -10,6 +10,7 @@ import UIKit
 class TaskViewController: UIViewController {
     
     @IBOutlet var label: UILabel!
+    @IBOutlet var disclaimer2: UILabel!
     
     var task: String?
 
@@ -17,6 +18,7 @@ class TaskViewController: UIViewController {
         super.viewDidLoad()
 
         label.text = task
+        disclaimer2.text = "Disclaimer: This is the very first prototype. Many features and functionalities may be missing"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "delete", style: .done, target: self, action: #selector(deleteTask))
     }

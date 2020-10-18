@@ -10,12 +10,15 @@ import UIKit
 class EntryViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var field: UITextField!
+    @IBOutlet var disclaimer: UILabel!
 
     
     var update: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        disclaimer.text = "Disclaimer: This is the very first prototype.  Many features and functionalities may be missing"
         
         field.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
