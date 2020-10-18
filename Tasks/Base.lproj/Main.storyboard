@@ -40,7 +40,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ADX-5J-eEJ" secondAttribute="trailing" id="mzG-Gq-ohn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Zha-DS-T6j"/>
+                    <navigationItem key="navigationItem" id="Zha-DS-T6j">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="wdC-CB-phe">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="9nj-8J-oDE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ADX-5J-eEJ" id="p8j-vO-lAC"/>
                     </connections>
@@ -49,20 +55,53 @@
             </objects>
             <point key="canvasLocation" x="1442.0289855072465" y="103.79464285714285"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1Rz-AX-3C5">
+        <!--Entry View Controller-->
+        <scene sceneID="WE5-OO-MkV">
             <objects>
-                <viewController id="UKP-bS-E99" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4ZT-uB-306">
+                <viewController storyboardIdentifier="entry" id="ehu-Ld-sbP" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ev-3m-Kal">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="zei-Fp-vSZ"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efB-UB-P9l">
+                                <rect key="frame" x="20" y="64" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Rh0-dp-4gi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T2t-I5-vwq"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T2t-I5-vwq" firstAttribute="trailing" secondItem="efB-UB-P9l" secondAttribute="trailing" constant="20" id="4uW-q5-9g2"/>
+                            <constraint firstItem="efB-UB-P9l" firstAttribute="leading" secondItem="T2t-I5-vwq" secondAttribute="leading" constant="20" id="TBG-m7-bcX"/>
+                            <constraint firstItem="efB-UB-P9l" firstAttribute="top" secondItem="T2t-I5-vwq" secondAttribute="top" constant="20" id="jFm-wG-RY5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="field" destination="efB-UB-P9l" id="dga-Lu-yfm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkO-i7-Kzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="104"/>
+        </scene>
+        <!--Task View Controller-->
+        <scene sceneID="hWl-6t-FtY">
+            <objects>
+                <viewController storyboardIdentifier="task" id="uQ6-3r-hIr" customClass="TaskViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IcL-k2-Hgb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zR8-yu-2Fk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsj-rh-1mA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hB3-JW-sx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244.927536231884" y="103.79464285714285"/>
+            <point key="canvasLocation" x="3041" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MmR-Zk-5gf">

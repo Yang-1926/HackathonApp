@@ -15,6 +15,8 @@
 		49C4BCB8253BD4AA0048BFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C4BCB6253BD4AA0048BFB5 /* LaunchScreen.storyboard */; };
 		49C4BCC3253BD4AB0048BFB5 /* TasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4BCC2253BD4AB0048BFB5 /* TasksTests.swift */; };
 		49C4BCCE253BD4AB0048BFB5 /* TasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4BCCD253BD4AB0048BFB5 /* TasksUITests.swift */; };
+		49C4BCDF253BE3CB0048BFB5 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4BCDE253BE3CB0048BFB5 /* EntryViewController.swift */; };
+		49C4BCE5253BE3FD0048BFB5 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4BCE4253BE3FD0048BFB5 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		49C4BCC9253BD4AB0048BFB5 /* TasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C4BCCD253BD4AB0048BFB5 /* TasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUITests.swift; sourceTree = "<group>"; };
 		49C4BCCF253BD4AB0048BFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C4BCDE253BE3CB0048BFB5 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		49C4BCE4253BE3FD0048BFB5 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				49C4BCB4253BD4AA0048BFB5 /* Assets.xcassets */,
 				49C4BCB6253BD4AA0048BFB5 /* LaunchScreen.storyboard */,
 				49C4BCB9253BD4AA0048BFB5 /* Info.plist */,
+				49C4BCDE253BE3CB0048BFB5 /* EntryViewController.swift */,
+				49C4BCE4253BE3FD0048BFB5 /* TaskViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C4BCB0253BD4A70048BFB5 /* ViewController.swift in Sources */,
+				49C4BCDF253BE3CB0048BFB5 /* EntryViewController.swift in Sources */,
+				49C4BCE5253BE3FD0048BFB5 /* TaskViewController.swift in Sources */,
 				49C4BCAC253BD4A70048BFB5 /* AppDelegate.swift in Sources */,
 				49C4BCAE253BD4A70048BFB5 /* SceneDelegate.swift in Sources */,
 			);
